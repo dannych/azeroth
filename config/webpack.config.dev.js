@@ -139,7 +139,7 @@ module.exports = {
       // In production, we use a plugin to extract that CSS to a file, but
       // in development "style" loader enables hot editing of CSS.
       {
-        test: /\.scss$/,
+        test: /\.(scss|css)$/,
         use: ['style-loader','css-loader','sass-loader', {
           loader: 'postcss-loader',
           options: {
